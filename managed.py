@@ -5,7 +5,7 @@ import time
 @task(log_prints=True)
 def my_task(num: int) -> int:
     print(f"the task number is {num}")
-    output_int = random.randint(1,5)
+    output_int = random.randint(3,10)
     time.sleep(output_int)
     return output_int
 
