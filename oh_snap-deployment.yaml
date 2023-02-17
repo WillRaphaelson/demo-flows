@@ -1,0 +1,49 @@
+###
+### A complete description of a Prefect Deployment for flow 'oh-snap'
+###
+name: unlink
+description: null
+version: 887936e1f88149e7a4447f03d35ee767
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: prefect-managed-exec-pool
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: oh-snap
+manifest_path: null
+storage:
+  repository: https://github.com/WillRaphaelson/demo-flows.git
+  reference: null
+  access_token: null
+  include_git_objects: false
+  _block_document_id: eac87f7a-2ccc-4c40-8d3d-3add59fda507
+  _block_document_name: managed
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: ''
+entrypoint: break_test.py:oh_snap
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2023-02-17T17:55:48.541211+00:00'

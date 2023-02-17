@@ -1,3 +1,4 @@
+from prefect import flow
 import os
 
 @flow()
