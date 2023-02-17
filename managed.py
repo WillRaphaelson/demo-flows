@@ -20,10 +20,6 @@ def my_flow(num_tasks: int) -> None:
     for i in range(num_tasks):
         second_num = my_task.submit(num=i)
         for j in range(second_num.result()):
-            my_sleepy_task.submit(second_num.result())
+            my_sleepy_task.submit(second_num)
 
 
-if __name__ == "__main__":
-    num_tasks = random.randint(50,60)
-    my_flow(num_tasks=num_tasks)
-    
